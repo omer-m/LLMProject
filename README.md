@@ -12,7 +12,7 @@ This application integrates a FastAPI backend for handling data processing tasks
 Install my-project with git clone
 
 ```bash
-  git clone https://github.com/omer-m/LLM_Project.git
+  git clone https://github.com/omer-m/LLMProject.git
 ```
 Navigate to the backend directory:
 
