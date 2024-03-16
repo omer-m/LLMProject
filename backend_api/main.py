@@ -43,9 +43,15 @@ global_analysis = "none"
 global_plots = []
 
 def get_completion(prompt, model="gpt-3.5-turbo"):
-    # get the contect of thos fuction from readme file 
-    # github is not allowing to upload 
-    return 
+    messages = [{"role": "user", "content": prompt}]
+    
+    client = OpenAI(api_key='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')
+ 
+    response = client.chat.completions.create(
+      model=model,
+      messages=messages
+    )
+    return response
 
 def get_name (resp):
     prompt_forNames = f"""
